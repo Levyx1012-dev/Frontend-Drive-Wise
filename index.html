@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Drive Wise</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="app">
+
+    <!-- HEADER -->
+    <div class="header">
+      <h1><span>Drive</span> Wise</h1>
+    </div>
+
+    <!-- MAPA -->
+    <iframe id="mapa"></iframe>
+    <!-- PAINEL -->
+    <div class="painel">
+        <div class="painel">
+        <div class="barra"></div>
+        <input type="text" id="origem" placeholder="Qual o seu endereço atual?">
+        <input type="text" id="destino" placeholder="Qual o endereço que deseja ir?">
+        <button onclick="gerarRota()">Mostrar rota</button>
+    </div>
+
+
+      <div class="resultado">
+        <h3>Resultado:</h3>
+        <p id="info"></p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
