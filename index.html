@@ -2,40 +2,35 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Drive Wise</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+<div class="app">
 
-  <div class="app">
-
-    <!-- HEADER -->
-    <div class="header">
-      <h1><span>Drive</span> Wise</h1>
-    </div>
-
-    <!-- MAPA -->
-    <iframe id="mapa"></iframe>
-    <!-- PAINEL -->
-    <div class="painel">
-        <div class="painel">
-        <div class="barra"></div>
-        <input type="text" id="origem" placeholder="Qual o seu endereço atual?">
-        <input type="text" id="destino" placeholder="Qual o endereço que deseja ir?">
-        <button onclick="gerarRota()">Mostrar rota</button>
-    </div>
-
-
-      <div class="resultado">
-        <h3>Resultado:</h3>
-        <p id="info"></p>
-      </div>
-
-    </div>
-
+  <div class="header">
+    <span class="drive">Drive</span>
+    <span class="wise">Wise</span>
   </div>
 
-  <script src="script.js"></script>
+  <iframe 
+    id="mapa"
+    src="https://www.google.com/maps?q=Fortaleza&output=embed">
+  </iframe>
+
+  <div class="painel">
+    <div class="handle"></div>
+
+    <input type="text" id="origem" placeholder="De onde você quer ir?">
+    <input type="text" id="destino" placeholder="Para onde você quer ir?">
+
+    <button onclick="gerarRota()">Mostrar rota</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
